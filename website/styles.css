@@ -1,0 +1,47 @@
+/* The navigation bar */
+nav {
+  overflow: hidden;
+  background-color: #beb2b8;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100vw; /* Full width */
+  margin: 0; /* Remove margin to avoid gaps on left */
+  padding: 0; /* Remove any padding */
+  display: flex; /* Use flexbox for better control */
+  justify-content: space-between; /* Distribute space between links and image */
+  align-items: center; /* Vertically center elements */
+}
+
+/* Links inside the navbar */
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Image inside the navbar */
+nav img {
+  height: 50px;
+  width: 52px;
+  float: right; /* Align image to the right */
+  margin-right: 16px; /* Add some space on the right side */
+}
+
+/* Change background on mouse-over */
+nav a:hover {
+  background: #ffc5e7;
+  color: black;
+}
+
+div {
+  margin-top: 100px;
+  padding-right: 50vw;
+}
+/* Body content */
+body {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  background-color: aliceblue;
+}
