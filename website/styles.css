@@ -38,10 +38,17 @@ nav a:hover {
 
 div {
   margin-top: 100px;
+  margin-right: 100px;
   padding-right: 50vw;
 }
+
 /* Body content */
 body {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-  background-color: aliceblue;
+    background: #FFD4DF;
+    font-family: 'karla', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    color: lightslategray;
 }
+
