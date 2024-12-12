@@ -3,18 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
+    <title>Login Page</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" href="https://fav.farm/🧚🏼‍♀️">
-</head>
+  </head>
   <body>
     <div>
-        <nav>
-            <a href="about.html">About</a>
-            <a href="projs.html">Projects</a>
-            <a href="https://www.linkedin.com/in/nevinafrese/">LinkedIn</a>
-            <img src="placeholder.jpg" alt="placeholder image">
-        </nav>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="projs.html">Projects</a>
+        <a href="https://www.linkedin.com/in/nevinafrese/">LinkedIn</a>
+        <img src="placeholder.jpg" alt="placeholder image">
+      </nav>
     </div>
+    <div class="login-container">
+      <form id="loginForm" class="login-form">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+        <p id="error-message">Invalid username or password. Please try again.</p>
+      </form>
+    </div>
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get username and password values
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (username === 'nevina' && password === '23') {
+          window.location.href = 'about.html'; // Redirect to the desired page
+        } else {
+          // Show an error message if login fails
+          document.getElementById('error-message').style.display = 'block';
+        }
+      });
+    </script>
   </body>
 </html>

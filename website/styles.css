@@ -52,3 +52,17 @@ body {
     color: lightslategray;
 }
 
+div.clicktoenter {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Make the div take full viewport height */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+/* Styling for the clam image */
+div.clicktoenter img {
+  max-width: 100%; /* Ensure the image scales responsively */
+  height: auto; /* Maintain aspect ratio */
+}
