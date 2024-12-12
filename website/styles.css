@@ -51,14 +51,17 @@ body {
     line-height: 180%;
     color: lightslategray;
 }
-
+div.container {
+  padding: 100px;
+  margin: 100px;
+}
 div.clicktoenter {
   display: flex; /* Use flexbox for alignment */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   height: 100vh; /* Make the div take full viewport height */
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
+  margin: 100px; /* Remove margin */
+  padding: 100px; /* Remove padding */
 }
 
 /* Styling for the clam image */
